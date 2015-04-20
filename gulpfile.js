@@ -141,7 +141,7 @@ gulp.task('deploy', function () {
 
 
 gulp.task('watch', function () {
-  gulp.watch([dirs.source.stylus, dirs.source.css], ['css']);
+  gulp.watch([dirs.source.scss, dirs.source.css], ['css']);
   gulp.watch(dirs.source.jade, ['html']);
   gulp.watch(dirs.source.coffee, ['js']);
 });

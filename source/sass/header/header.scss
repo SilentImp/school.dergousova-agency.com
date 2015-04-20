@@ -1,0 +1,60 @@
+@import "../helpers/helpers";
+
+body>header{
+  height: 52px;
+  background-color: $brown-bg;
+  padding: 0 20px;
+  line-height: 52px;
+  position: relative;
+  text-align: center;
+  .register-link{
+    display: inline-block;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: $gold;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 0 0 0 30px;
+    background: url('../svg/register.svg') 0 50% no-repeat;
+    background-size: 16px auto;
+    }
+  .phones{
+    position: absolute;
+    right: 20px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    }
+  .subscribe{
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    }
+  }
+
+
+@media screen and (max-width: 1100px) {
+  html>body>header{
+    text-align: left;
+    .subscribe{
+      display: none;
+      }
+    }
+  }
+
+
+@media screen and (max-width: 600px) {
+  html>body>header{
+    height: auto;
+    line-height: 24px;
+    padding: 20px;
+    .phones{
+      position: relative;
+      right: auto;
+      top: auto;
+      bottom: auto;
+      }
+    }
+  }

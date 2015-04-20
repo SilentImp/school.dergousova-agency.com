@@ -1,0 +1,44 @@
+@import "../helpers/helpers";
+
+.phones{
+  position: relative;
+  padding: 0 0 0 30px;
+  background: url('../svg/phones.svg') 0 50% no-repeat;
+  background-size: 17px auto;
+  z-index: 1;
+  &__number{
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: $gold;
+    font-size: 10px;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 0 0 0 33px;
+    position: relative;
+    &:first-child{
+      margin: 0;
+      &:after{
+        content: none;
+        display: none;
+        }
+      }
+    &:after{
+      content: ".";
+      display: block;
+      position: absolute;
+      right: 100%;
+      top: 0;
+      bottom: 0;
+      margin: auto 16px auto 0;
+      height: 9px;
+      width: 1px;
+      font-size: 0;
+      line-height: 0;
+      text-indent: -9999px;
+      overflow: hidden;
+      pointer-events: none;
+      z-index: -1;
+      background-color: $gold;
+      }
+    }
+  }

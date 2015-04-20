@@ -1,0 +1,38 @@
+@import "../colors/colors";
+
+@mixin input {
+  -webkit-appearence: none;
+  -moz-appearence: none;
+  background: $gold;
+  border-style: none;
+  padding: 13px 20px;
+  margin: 0;
+  display: inline-block;
+  box-sizing: border-box;
+  height: 47px;
+  line-height: 11px;
+  font-size: 9px;
+  color: $brown;
+  box-shadow: none;
+  }
+
+
+@mixin textarea {
+  @include input;
+  resize: none;
+  height: 125px;
+  }
+
+
+@mixin clear_button {
+  background: none;
+  box-shadow: none;
+  border-style: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  &::-moz-focus-inner {
+    padding: 0;
+    border: 0
+    }
+  }
