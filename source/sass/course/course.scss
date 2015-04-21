@@ -1,10 +1,31 @@
 @import "../helpers/helpers";
 
 .course{
-  width: 880px;
+  max-width: 880px;
+  width: 100%;
   margin: 35px auto;
-  @include clearit;
   color: $brown;
+  font-size: 0;
+  line-height: 0;
+  text-align: center;
+  &_types{
+    max-width: 1060px;
+    .course__title{
+      max-width: initial;
+      }
+    .course__item{
+      width: 33.333%;
+      &:before{
+        width: 150px;
+        height: 150px;
+        margin: 0 auto 30px;
+        background-size: 150px 150px;
+        }
+      }
+    }
+  .read{
+    margin: 30px 0 0;
+    }
   &__abstract{
     font-size: 12px;
     line-height: 16px;
@@ -20,11 +41,13 @@
     max-width: 220px;
     }
   &__item{
-    float: left;
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
     box-sizing: border-box;
     width: 25%;
     padding: 0 20px;
-    text-align: center;
+    margin: 0 auto 40px;
     &:before{
       content: ".";
       width: 100px;
@@ -55,34 +78,34 @@
       background-image: url('../svg/price.svg');
       background-position: 50% -2px;
       }
+    &_newbie:before{
+      background-image: url('../svg/newbie.svg');
+      }
+    &_master:before{
+      background-image: url('../svg/master.svg');
+      }
+    &_owner:before{
+      background-image: url('../svg/owner.svg');
+      }
+    &_service:before{
+      background-image: url('../svg/service.svg');
+      }
+    &_bride:before{
+      background-image: url('../svg/bride.svg');
+      }
     }
   }
 
-@media screen and (max-width: 880px) {
-  .course{
+@media screen and (max-width: 700px) {
+  .course.course_types .course__item,
+  .course .course__item{
+    width: 50%;
+    }
+  }
+
+@media screen and (max-width: 500px) {
+  .course.course_types .course__item,
+  .course .course__item{
     width: 100%;
-    }
-  }
-
-@media screen and (max-width: 700px) {
-  .course{
-    font-size: 0;
-    line-height: 0;
-    &__item{
-      margin: 0 auto 40px;
-      overflow: hidden;
-      float: none;
-      display: inline-block;
-      vertical-align: top;
-      width: 50%;
-      }
-    }
-  }
-
-@media screen and (max-width: 700px) {
-  .course{
-    &__item{
-      width: 100%;
-      }
     }
   }
