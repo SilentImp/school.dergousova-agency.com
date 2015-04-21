@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    
+    title Как попасть в команду | Свадебное агентство Саши Дергусовой
+    
+    link(rel="stylesheet", href="css/styles.css")
+    
+  body
+    header
+      form.subscribe(action="/subscribe/", method="post")
+        fieldset
+          label(for="header_subscribe_email") Подписаться на рассылку
+          input#header_subscribe_email(type="email", name="email", placeholder="ВАШ EMAIL", value="", required="required")
+          button(type="submit") Подписаться
+      a.register-link(href="#") Зарегистрироваться на курс
+      address.phones
+        a.phones__number(href="tel:+380672901863") +38 (067) 290 18 63
+        a.phones__number(href="tel:+380442279187") +38 (044) 227 91 87 
+    
+    section.page
+    
+      header.page__header
+      
+        a(href="/")
+          h1.logotype Свадебное агентство Саши Дергусовой
+          
+        ul.page__navigation
+          span.page__navigation-dropdown
+            a.page__navigation-link(href="#") О школе
+            .page__navigation-submenu
+              ul.page__navigation-submenu-wrapper
+                li
+                  a.page__navigation-link(href="company.html") Курсы
+                li
+                  a.page__navigation-link(href="#") Календарь обучения
+                li
+                  a.page__navigation-link(href="#") Выпускники
+          a.page__navigation-link(href="about.html") Об агентстве
+          a.page__navigation-link(href="#") Новости
+          a.page__navigation-link.page__navigation-link_current(href="vacancy.html") Как попасть в команду
+          a.page__navigation-link.page__navigation-link_contacts(href="#") Контакты
+    
+      section.window.window_about
+        .window__wrapper
+          h2.window__title Как попасть в команду
+          p.window__text Нас часто спрашивают, как можно стать частью нашей дружной команды. У нас все как у молодоженов – исключительно по любви.
+    
+      section.text
+        p Бывает, что проскочит искра, с которой начинается волшебство, но гораздо больше шансов попасть в нашу семью у тех, с кем получается строить отношения поэтапно. Мы знакомимся со всеми  необыкновенными людьми в школе, бережно устанавливаем связь и только самых близких по духу приглашаем присоединиться к нам.
+        
+        ul
+          li Кто такой свадебный распорядитель, какие функции он выполняет, какими качествами должен обладать, а также основные требования к свадебному распорядителю.
+
+          li Как выявить потребность клиента и найти ту самую идею свадьбы, чтобы она запомнилась паре и гостям навсегда.
+
+        
+      section.mailus.mailus_work
+        .mailus__outer-wrapper
+          .mailus__inner-wrapper
+            .mailus__details
+              h2.mailus__title Если вы хотите стать членом команды присылайте нам свои резюме на e-mail ответив на несколько вопросов:
+              ul
+                li Ваш опыт работы на свадьбе?  
+                li Почему вы хотите работать в Свадебном агентстве Саши Дергоусовой? 
+                li Что бы самое важное вы хотели рассказать о себе?
+              a.mailus__send(href="#") Напишите нам
+      
+      section.mailus.mailus_training
+        .mailus__outer-wrapper
+          .mailus__inner-wrapper
+            .mailus__details
+              h2.mailus__title Люди, которые вдохновят нас больше всего, могут получить шанс пройти у нас  стажировку. Если вы готовы попытать удачу, присылайте письма с ответами на вопросы
+              ul
+                li Почему вы хотите пройти стажировку в свадебном агентстве?
+                li Почему вы хотите стажироваться именно в Свадебном агентстве Саши Дергоусовой? 
+                li Что вы умеете делать и чем можете быть полезны в период стажировки?
+                li Какой период стажировки считаете возможным?
+              a.mailus__send(href="#") Напишите нам
+      
+      section.register
+        h2.section-title.section-title_register: span Записаться на следующий курс
+        form.register__form(action="/register/", method="post")
+          fieldset
+            input.register__name(type="text", name="name", value="", placeholder="ВАШЕ ИМЯ", required="required")
+          fieldset
+            input.register__tel(type="tel", name="tel", value="", placeholder="ВАШ ТЕЛЕФОН", required="required")
+            input.register__email(type="email", name="email", value="", placeholder="ВАШ EMAIL", required="required")
+          fieldset
+            textarea.register__message(name="message", cols="30", rows="10", placeholder="СООБЩЕНИЕ", required="required")
+          fieldset
+            button.register__submit(type="submit") Отправить
+        
+    footer
+      p.copyright © 2015 Свадебное агентство саши дергоусовой
+      form.subscribe(action="/subscribe/", method="post")
+        fieldset
+          label(for="footer_subscribe_email") Подписаться на рассылку
+          input#footer_subscribe_email(type="email", name="email", placeholder="ВАШ EMAIL", value="", required="required")
+          button(type="submit") Подписаться
+      a.developed-by(href="http://territory.com.ua/", target="_blank") CBT
+    

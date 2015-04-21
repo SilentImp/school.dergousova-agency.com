@@ -1,6 +1,8 @@
 @import "../helpers/helpers";
 
 .register{
+  max-width: 1200px;
+  margin: 0 auto;
   &__form{
     width: 600px;
     margin: 0 auto 40px;

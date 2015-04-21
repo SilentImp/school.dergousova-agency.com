@@ -1,6 +1,9 @@
 @import "../helpers/helpers";
 
 .window{
+  max-width: 1200px;
+  box-sizing: border-box;
+  margin: 0 auto;
   background: rgba($brown-bg, 0) url('../images/window-1.jpg') 50% 50% no-repeat;
   background-size: cover;
   height: 640px;

@@ -15,7 +15,6 @@ html{
       font-family: "Gotham Pro", sans-serif;
       }
     .page{
-      max-width: 1200px;
       margin: 0 auto;
       padding: 0 0 100px;
       overflow-x: hidden;
@@ -103,8 +102,9 @@ html{
           }
         }
       &__header{
+        max-width: 1200px;
         height: 100px;
-        margin: 20px 0;
+        margin: 20px auto;
         position: relative;
         .logotype{
           width: 110px;

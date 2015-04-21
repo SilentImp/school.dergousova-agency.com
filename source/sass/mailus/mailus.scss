@@ -1,0 +1,128 @@
+@import "../helpers/helpers";
+
+.mailus{
+  position: relative;
+  width: 100%;
+  background-color: $gold;
+  color: $brown;
+  font-size: 12px;
+  line-height: 16px;
+  &_training{
+    background-color: $white;
+    .mailus__details{
+      background-color: $white;
+      }
+    ul li:before{
+      background-color: $brown;
+      }
+    }
+  &__send{
+    background-color: $brown;
+    text-decoration: none;
+    color: $white;
+    display: inline-block;
+    height: 34px;
+    line-height: 38px;
+    overflow: hidden;
+    padding: 0 20px;
+    border-radius: 17px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    white-space: nowrap;
+    }
+  &__outer-wrapper{
+    background: $white;
+    width: 100%;
+    position: relative;
+    left: -50%;
+    }
+  &__inner-wrapper{
+    width: 100%;
+    left: 50%;
+    position: relative;
+    }
+  &__details{
+    width: 860px;
+    margin: 0 auto;
+    background-color: $gold;
+    box-sizing: border-box;
+    padding: 40px 20px 20px 130px;
+    }
+  &__title{
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0 0 50px;
+    max-width: 720px;
+    }
+  ul{
+    margin: 0 0 32px;
+    max-width: 720px;
+    }
+  li{
+    position: relative;
+    margin: 0 0 16px;
+    &:before{
+      content:".";
+      font-size: 0;
+      line-height: 0;
+      width: 10px;
+      height: 10px;
+      border-radius: 100%;
+      background-color: $white;
+      position: absolute;
+      top: 2px;
+      left: -40px;
+      }
+    }
+  }
+
+
+@media screen and (max-width: 860px) {
+  .mailus{
+    &_training{
+      .mailus__outer-wrapper{
+        background-color: $white;
+        }
+      }
+    &__outer-wrapper{
+      background-color: $gold;
+      }
+    &__details{
+      width: 600px;
+      padding-left: 0;
+      }
+    }
+  }
+
+
+@media screen and (max-width: 700px) {
+  .mailus{
+    li{
+      margin-left: 40px;
+      }
+    }
+  }
+
+@media screen and (max-width: 640px) {
+  .mailus{
+    &__details{
+      width: auto;
+      padding-left: 20px;
+      }
+    }
+  }
+
+
+@media screen and (max-width: 500px) {
+  html>body .mailus{
+    li{
+      margin-left: 25px;
+      &:before{
+        left: -25px;
+        }
+      }
+    }
+  }
