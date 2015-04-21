@@ -1,0 +1,75 @@
+@import "../helpers/helpers";
+
+.person{
+  position: relative;
+  width: 100%;
+  background-color: $gold;
+  margin: 30px 0 50px;
+  &__outer-wrapper{
+    background: $white;
+    width: 100%;
+    position: relative;
+    left: -50%;
+    }
+  &__inner-wrapper{
+    width: 100%;
+    left: 50%;
+    position: relative;
+    }
+  &__details{
+    width: 872px;
+    margin: 0 auto;
+    background-color: $gold;
+    box-sizing: border-box;
+    padding: 0 20px 0 0px;
+    font-size: 0;
+    }
+  &__photo{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 55px 0 0;
+    }
+  &__name{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 0 30px;
+    }
+  &__abstract{
+    width: 480px;
+    display: inline-block;
+    vertical-align: middle;
+    color: $brown;
+    font-size: 12px;
+    line-height: 16px;
+    overflow: hidden;
+    }
+  }
+
+
+@media screen and (max-width: 860px) {
+  .person{
+    &__photo{
+      display: none;
+      }
+    &__abstract{
+      width: auto;
+      }
+    &__outer-wrapper{
+      background-color: $gold;
+      }
+    &__details{
+      padding: 20px;
+      margin: 0;
+      width: 600px;
+      }
+    }
+  }
+
+
+@media screen and (max-width: 600px) {
+  .person{
+    &__details{
+      width: auto;
+      }
+    }
+  }
