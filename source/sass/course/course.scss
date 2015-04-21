@@ -1,0 +1,88 @@
+@import "../helpers/helpers";
+
+.course{
+  width: 880px;
+  margin: 35px auto;
+  @include clearit;
+  color: $brown;
+  &__abstract{
+    font-size: 12px;
+    line-height: 16px;
+    max-width: 220px;
+    margin: 0 auto;
+    }
+  &__title{
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 auto 16px;
+    max-width: 220px;
+    }
+  &__item{
+    float: left;
+    box-sizing: border-box;
+    width: 25%;
+    padding: 0 20px;
+    text-align: center;
+    &:before{
+      content: ".";
+      width: 100px;
+      height: 100px;
+      margin: 0 auto 20px;
+      display: block;
+      border-radius: 100%;
+      overflow: hidden;
+      font-size: 0;
+      line-height: 0;
+      text-indent: -9999px;
+      background-color: $gold;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: 100px 100px;
+      }
+    &_target:before{
+      background-image: url('../svg/target.svg');
+      }
+    &_teacher:before{
+      background-image: url('../svg/teacher.svg');
+      background-position: 50% -2px;
+      }
+    &_duration:before{
+      background-image: url('../svg/duration.svg');
+      }
+    &_price:before{
+      background-image: url('../svg/price.svg');
+      background-position: 50% -2px;
+      }
+    }
+  }
+
+@media screen and (max-width: 880px) {
+  .course{
+    width: 100%;
+    }
+  }
+
+@media screen and (max-width: 700px) {
+  .course{
+    font-size: 0;
+    line-height: 0;
+    &__item{
+      margin: 0 auto 40px;
+      overflow: hidden;
+      float: none;
+      display: inline-block;
+      vertical-align: top;
+      width: 50%;
+      }
+    }
+  }
+
+@media screen and (max-width: 700px) {
+  .course{
+    &__item{
+      width: 100%;
+      }
+    }
+  }

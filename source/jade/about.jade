@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    
+    title Об агентстве | Свадебное агентство Саши Дергусовой
+    
+    link(rel="stylesheet", href="css/styles.css")
+    
+  body
+    header
+      form.subscribe(action="/subscribe/", method="post")
+        fieldset
+          label(for="header_subscribe_email") Подписаться на рассылку
+          input#header_subscribe_email(type="email", name="email", placeholder="ВАШ EMAIL", value="", required="required")
+          button(type="submit") Подписаться
+      a.register-link(href="#") Зарегистрироваться на курс
+      address.phones
+        a.phones__number(href="tel:+380672901863") +38 (067) 290 18 63
+        a.phones__number(href="tel:+380442279187") +38 (044) 227 91 87 
+    
+    section.page
+    
+      header.page__header
+      
+        a(href="/")
+          h1.logotype Свадебное агентство Саши Дергусовой
+          
+        ul.page__navigation
+          span.page__navigation-dropdown
+            a.page__navigation-link(href="#") О школе
+            .page__navigation-submenu
+              ul.page__navigation-submenu-wrapper
+                li
+                  a.page__navigation-link(href="#") Курсы
+                li
+                  a.page__navigation-link(href="#") Календарь обучения
+                li
+                  a.page__navigation-link(href="#") Выпускники
+          a.page__navigation-link.page__navigation-link_current(href="about.html") Об агентстве
+          a.page__navigation-link(href="#") Новости
+          a.page__navigation-link(href="#") Как попасть в команду
+          a.page__navigation-link.page__navigation-link_contacts(href="#") Контакты
+    
+      section.window.window_about
+        .window__wrapper
+          h2.window__title Базовый курс «Профессия свадебного распорядителя»
+          p.window__text Этот курс дает глубинное понимание профессии и ясное представление всем его участникам о том, как сделать свадьбу настоящим шедевром.
+    
+      section.text
+        p Этот курс дает глубинное понимание профессии и ясное представление всем его участникам о том, как сделать свадьбу настоящим шедевром. Он разработан не только для новичков, а в первую очередь, будет незаменим для тех, кто хорошо знаком с профессией, но хочет расти и что-то радикально менять. 
+        
+        p Курс интересен и увлекателен потому, что наполнен теоретическими знаниями, полученными благодаря многолетнему опыту работы команды Саши Дергоусовой, а также множеством разнообразных практических упражнений, которые перевернут ваши представления о реализации свадеб. Учителя школы делятся не только знаниями, но и собственными уникальными наработками, делая это очень легко, открыто и непринужденно. 
+
+        p Базовый курс «Профессия свадебного распорядителя» - это основа, которая жизненно необходима для профессионального роста и продвижения. Если вы хотите обучаться в нашей школе и нашему стилю, он является очень рекомендованным для изучения.
+        
+        h2 В рамках курса рассматриваются
+        
+        ul
+          li Кто такой свадебный распорядитель, какие функции он выполняет, какими качествами должен обладать, а также основные требования к свадебному распорядителю.
+
+          li Как выявить потребность клиента и найти ту самую идею свадьбы, чтобы она запомнилась паре и гостям навсегда.
+
+          li Алгоритм подготовки свадьбы – с чего начать и чем закончить, пошаговое решение свадебных задач. Все подробности от первой встречи, до составления сметы и бюджета свадьбы, включая утверждения подрядчиков, концептуальное наполнение свадьбы и написание сценарного плана свадебного мероприятия.
+
+          li Распространенные типажи невест. Как определить к какому из них относится ваш клиент. А также как, в зависимости от возраста, социального статуса, положения в обществе и личностных особенностей невесты, строить с ней работу. Методика воплощения ее мечты в реальность. 
+
+          li Сценарий свадебного дня – как сделать праздник логичным и естественным, размеренным, интересным и, в то же время, не «перегруженным» событиями. Рассматриваются основные составляющие: сборы молодоженов, выкуп невесты, фотосессия, организация гостей, выездная церемония, поздравление молодоженов, банкет.
+
+          li Формирование команды и работа с ней – составляющие эффективной команды, распределение обязанностей, координация и тайминг. Подрядчики, которые работают над подготовкой свадьбы, как держать подрядчиков в тонусе. 
+
+          li Каким должно быть место для проведения свадьбы: факторы, влияющие на выбор локации, корректное планирование места для празднования свадебного банкета, расстановка столов, зонирование территории локации, работа с ее администраторами. 
+
+      ul.course
+        
+        li.course__item.course__item_target
+          h2.course__title Для кого
+          p.course__abstract свадебных распорядителей, владельцев бизнеса, новичков свадебной индустрии
+        
+        li.course__item.course__item_teacher
+          h2.course__title Преподаватели
+          p.course__abstract Саша Дергоусова
+          
+        li.course__item.course__item_duration
+          h2.course__title Продолжительность
+          p.course__abstract 1 день
+        
+        li.course__item.course__item_price
+          h2.course__title Стоимость
+          p.course__abstract 200 евро. Для учеников, проходивших другие курсы скидка 10%. Для выпускников базового курса «Профессия свадебного распорядителя» скидка 20%.
+    
+      section.register
+        h2.section-title.section-title_register: span Записаться на следующий курс
+        form.register__form(action="/register/", method="post")
+          fieldset
+            input.register__name(type="text", name="name", value="", placeholder="ВАШЕ ИМЯ", required="required")
+          fieldset
+            input.register__tel(type="tel", name="tel", value="", placeholder="ВАШ ТЕЛЕФОН", required="required")
+            input.register__email(type="email", name="email", value="", placeholder="ВАШ EMAIL", required="required")
+          fieldset
+            textarea.register__message(name="message", cols="30", rows="10", placeholder="СООБЩЕНИЕ", required="required")
+          fieldset
+            button.register__submit(type="submit") Отправить
+        
+    
+    footer
+      p.copyright © 2015 Свадебное агентство саши дергоусовой
+      form.subscribe(action="/subscribe/", method="post")
+        fieldset
+          label(for="footer_subscribe_email") Подписаться на рассылку
+          input#footer_subscribe_email(type="email", name="email", placeholder="ВАШ EMAIL", value="", required="required")
+          button(type="submit") Подписаться
+      a.developed-by(href="http://territory.com.ua/", target="_blank") CBT
+    

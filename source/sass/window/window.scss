@@ -3,13 +3,23 @@
 .window{
   background: rgba($brown-bg, 0) url('../images/window-1.jpg') 50% 50% no-repeat;
   background-size: cover;
-  min-height: 490px;
-  padding: 170px 20px 20px;
+  height: 640px;
+  line-height: 640px;
+  padding: 20px;
   text-align: center;
   transition: background-color .25s linear;
   background-blend-mode: multiply;
   &:hover{
     background-color: rgba($brown-bg, .8);
+    }
+  &_about{
+    background-image: url('../images/window-2.jpg');
+    height: 520px;
+    }
+  &__wrapper{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 0;
     }
   &__text{
     color: $white;
@@ -17,7 +27,7 @@
     line-height: 16px;
     max-width: 550px;
     margin: 40px auto 55px;
-    padding: 50px 20px 40px;
+    padding: 60px 20px;
     position: relative;
     &:before{
       content: ".";
@@ -101,7 +111,6 @@
 @media screen and (max-width: 900px) {
   html>body{
     .window{
-      padding: 70px;
       min-height: initial;
       }
     }
@@ -111,7 +120,6 @@
 @media screen and (max-width: 700px) {
   html>body{
     .window{
-      padding: 40px;
       min-height: initial;
       &__title{
         font-size: 32px;
@@ -124,7 +132,6 @@
 @media screen and (max-width: 600px) {
   html>body{
     .window{
-      padding: 20px;
       &__text{
         padding: 0;
         margin: 20px auto 40px;
