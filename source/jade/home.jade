@@ -2,7 +2,12 @@
 html(lang="en")
 head
   meta(charset="UTF-8")
+  
+  meta(name="viewport", content="width=device-width, initial-scale=1")
+  meta(http-equiv="X-UA-Compatible", content="IE=edge")
+  
   title Свадебное агентство Саши Дергусовой
+  
   link(rel="stylesheet", href="css/styles.css")
 body
   header
@@ -23,15 +28,24 @@ body
       a(href="/")
         h1.logotype Свадебное агентство Саши Дергусовой
         
-      nav.page__navigation
-        a.page__navigation-link(href="#") О школе
+      ul.page__navigation
+        span.page__navigation-dropdown
+          a.page__navigation-link(href="#") О школе
+          .page__navigation-submenu
+            ul.page__navigation-submenu-wrapper
+              li
+                a.page__navigation-link(href="#") Курсы
+              li
+                a.page__navigation-link(href="#") Календарь обучения
+              li
+                a.page__navigation-link(href="#") Выпускники
         a.page__navigation-link(href="#") Об агентстве
         a.page__navigation-link(href="#") Новости
         a.page__navigation-link(href="#") Как попасть в команду
         a.page__navigation-link.page__navigation-link_contacts(href="#") Контакты
   
     section.window
-      h2.window__title Добро пожаловать в Свадебную школу Саши Дергоусовой
+      h2.window__title Добро пожаловать в Свадебную школу Саши Дергоусовой
       p.window__text Наша основная цель – вдохновить людей на создание невероятного праздника. Мы обучаем, как сделать свадьбу не только стильной, красивой, но и запоминающейся своей эмоциональностью и душевностью. Практикующий свадебный распорядитель,  владелец бизнеса, поставщик свадебных услуг, новичок, мечтающий стать профессионалом и даже невеста, которая хочет сделать свадьбу самостоятельно, - каждый найдет у нас подходящий курс
       a.read(href="#") Детальнее
   

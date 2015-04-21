@@ -60,6 +60,8 @@
     font-weight: 900;
     text-transform: uppercase;
     position: relative;
+    max-width: 960px;
+    margin: 0 auto;
     &:before{
       content:".";
       display: block;
@@ -91,6 +93,58 @@
       left: 50%;
       margin-left: 53px;
       pointer-events: none;
+      }
+    }
+  }
+
+
+@media screen and (max-width: 900px) {
+  html>body{
+    .window{
+      padding: 70px;
+      min-height: initial;
+      }
+    }
+  }
+
+
+@media screen and (max-width: 700px) {
+  html>body{
+    .window{
+      padding: 40px;
+      min-height: initial;
+      &__title{
+        font-size: 32px;
+        line-height: 36px;
+        }
+      }
+    }
+  }
+
+@media screen and (max-width: 600px) {
+  html>body{
+    .window{
+      padding: 20px;
+      &__text{
+        padding: 0;
+        margin: 20px auto 40px;
+        width: auto;
+        &:before,
+        &:after{
+          display: none;
+          }
+        }
+      &__title{
+        font-size: 18px;
+        line-height: 24px;
+        width: auto;
+        margin: 0;
+        font-weight: bold;
+        &:before,
+        &:after{
+          display: none;
+          }
+        }
       }
     }
   }

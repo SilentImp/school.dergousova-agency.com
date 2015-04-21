@@ -87,3 +87,26 @@
       }
     }
   }
+
+@media screen and (max-width: 450px) {
+  html>body .news{
+    &__item{
+      height: auto;
+      }
+    &__details{
+      padding: 20px;
+      }
+    &__lead{
+      width: auto;
+      &:after{
+        display: none;
+        }
+      }
+    &__title{
+      width: auto;
+      &:after{
+        display: none;
+        }
+      }
+    }
+  }

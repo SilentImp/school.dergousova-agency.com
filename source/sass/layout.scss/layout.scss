@@ -6,6 +6,7 @@ html{
   body{
     min-height: 100%;
     position: relative;
+    overflow-x: hidden;
     textarea,
     button,
     select,
@@ -17,23 +18,76 @@ html{
       max-width: 1200px;
       margin: 0 auto;
       padding: 0 0 100px;
+      overflow-x: hidden;
       @include clearit;
       &__navigation{
+        position: relative;
+        z-index: 10;
         float: right;
         @include clearit;
         max-width: 820px;
-        padding: 0 0 0 140px;
+        padding: 26px 0 0 140px;
+        &-dropdown{
+          height: 48px;
+          vertical-align: middle;
+          position: relative;
+          z-index: 12;
+          display: inline-block;
+          margin: 0 25px;
+          .page__navigation-link{
+            margin: 0;
+            }
+          &:focus,
+          &:hover{
+            .page__navigation-submenu{
+              display: block;
+              }
+            }
+          }
+        &-submenu{
+          display: none;
+          z-index: 13;
+          position: absolute;
+          top: 100%;
+          left: 50%;
+          line-height: 48px;
+          width: 240px;
+          height: 48px;
+          text-align: center;
+          &-wrapper{
+            position: relative;
+            left: -50%;
+            z-index: 14;
+            background-color: $white;
+            display: block;
+            width: 240px;
+            a:after{
+              content: ".";
+              font-size: 0;
+              line-height: 0;
+              overflow: hidden;
+              height: 1px;
+              width: 67px;
+              background: $transparent-brown;
+              position: absolute;
+              top: 0;
+              left: 50%;
+              margin-left: -33px;
+              }
+            }
+          }
         &-link{
-          margin: 38px 50px 0 0;
+          margin: 0 25px;
           text-decoration: none;
-          float: left;
           font-size: 12px;
-          line-height: 24px;
+          line-height: 48px;
           vertical-align: middle;
           font-weight: bold;
           text-transform: uppercase;
           color: $brown;
           transition: color .15s;
+          position: relative;
+          display: inline-block;
           &_current,
           &:hover,
           &:active,
@@ -41,8 +95,7 @@ html{
             color: $gold;
             }
           &_contacts{
-            float: right;
-            margin: 38px 0 0 90px;
+            margin: 0 0 0 90px;
             padding: 0 0 0 35px;
             background: url('../svg/contacts.svg') 0 50% no-repeat;
             background-size: 24px auto;
@@ -56,6 +109,7 @@ html{
         .logotype{
           width: 110px;
           height: 100px;
+          z-index: 100;
           position: absolute;
           top: 0;
           bottom: 0;
@@ -84,12 +138,11 @@ html{
   html>body{
     .page{
       &__navigation{
+        &-dropdown,
         &-link{
           margin: 0 20px 0 0;
-          float: none;
           display: inline-block;
           vertical-align: middle;
-          line-height: 100px;
           &_contacts{
             padding: 0;
             background: none;
@@ -100,16 +153,43 @@ html{
     }
   }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 800px) {
   html>body{
     .page{
+      &__header{
+        height: auto;
+        @include clearit;
+        }
       &__navigation{
         float: right;
+        padding-top: 0;
+        &-submenu{
+          display: block;
+          position: static;
+          top: auto;
+          left: auto;
+          width: auto;
+          height: auto;
+          &-wrapper{
+            left: auto;
+            display: block;
+            position: static;
+            margin: 0;
+            width: auto;
+            background: none;
+            }
+          }
+        &-dropdown,
         &-link{
+          height: auto;
           margin: 0;
           float: left;
           clear: both;
+          text-align: left;
           line-height: 20px;
+          &:after{
+            display: none;
+            }
           }
         }
       }
