@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>О школе | Свадебное агентство Саши Дергусовой</title>
+    <link rel="stylesheet" href="css/styles.css"/>
+  </head>
+  <body>
+    <header>
+      <form action="/subscribe/" method="post" class="subscribe">
+        <fieldset>
+          <label for="header_subscribe_email">Подписаться на рассылку</label>
+          <input id="header_subscribe_email" type="email" name="email" placeholder="ВАШ EMAIL" value="" required="required"/>
+          <button type="submit">Подписаться</button>
+        </fieldset>
+      </form><a href="#" class="register-link">Зарегистрироваться на курс</a>
+      <address class="phones"><a href="tel:+380672901863" class="phones__number">+38 (067) 290 18 63</a><a href="tel:+380442279187" class="phones__number">+38 (044) 227 91 87 </a></address>
+    </header>
+    <section class="page">
+      <header class="page__header"><a href="/">
+          <h1 class="logotype">Свадебное агентство Саши Дергусовой</h1></a>
+        <ul class="page__navigation"><span class="page__navigation-dropdown"><a href="team.html" class="page__navigation-link page__navigation-link_current">О школе</a>
+            <div class="page__navigation-submenu">
+              <ul class="page__navigation-submenu-wrapper">
+                <li><a href="company.html" class="page__navigation-link">Курсы</a></li>
+                <li><a href="#" class="page__navigation-link">Календарь обучения</a></li>
+                <li><a href="#" class="page__navigation-link">Выпускники</a></li>
+              </ul>
+            </div></span><a href="about.html" class="page__navigation-link">Об агентстве</a><a href="#" class="page__navigation-link">Новости</a><a href="vacancy.html" class="page__navigation-link">Как попасть в команду</a><a href="#" class="page__navigation-link page__navigation-link_contacts">Контакты</a></ul>
+      </header>
+      <section class="window window_about">
+        <div class="window__wrapper">
+          <h2 class="window__title">это команда людей, которые уже более 8 лет помогают воплощать в жизнь мечты</h2>
+          <p class="window__text">Мы делаем свою работу с огромной любовью и самоотдачей. Поэтому глубоко убеждены, что приятной и запоминающейся должна быть не только сама свадьба, а и вся подготовка к ней.</p>
+        </div>
+      </section>
+      <section class="text text_about">
+        <p>На нашем счету более 150 свадеб, организованных не только в различных городах Украины, но и во Франции, Италии, Англии, Турции, России, Грузии, Индии, Шри-Ланке и на Канарских островах.</p>
+        <p>Сюжеты о том как мы это делали и что у нас получилось, легли в основу серии передач «PRO Весілля» на телеканале К1. О работе агентства также рассказывали: 1+1, Интер, СТБ, НТВ, М1, К2, О-TV и другие.</p>
+      </section>
+      <section class="person">
+        <div class="person__outer-wrapper">
+          <div class="person__inner-wrapper">
+            <div class="person__details"><img src="images/alex.jpg" alt="Фотография Саши Дергоусовой" class="person__photo"/>
+              <div class="person__abstract">
+                <h2 class="person__name">Саша Дергоусова</h2>
+                <p class="person__brief">Основатель “Свадебного агентства Саши Дергоусовой”. Двигатель и душа компании. Настоящий профессионал своего дела с яркой харизмой и тонким чувством стиля. Организация свадеб – скорее ее призвание, чем работа, потому что делает она это очень легко, органично и от сердца. За восемь лет Саша смогла собрать возле себя сильную команду не менее преданных делу людей – душевных и искренних, высококвалифицированных специалистов, которые ценят каждую пару, каждую созданную семью и каждую свадьбу, к которой они имеют честь быть причастными.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="team">
+        <div class="team__abstract">
+          <p class="team__about">Команда Свадебного агентства Саши Дергоусовой - это трепетно подобранный крепкий коллектив, объединенный ценностями, профессионализмом и общей целью: «Мы помогаем воплотить в жизнь мечты людей, которые приходят к нам. И делаем свою работу с огромной любовью, нежностью и самоотдачей.»</p><a href="#" target="_blank" class="team__agency">Сайт агентства</a>
+        </div><img src="images/team.jpg" alt="Фотография команды свадебного агентства Саши Дергусовой" class="team__photo"/>
+      </section>
+      <section class="register">
+        <h2 class="section-title section-title_register"><span>Записаться на следующий курс</span></h2>
+        <form action="/register/" method="post" class="register__form">
+          <fieldset>
+            <input type="text" name="name" value="" placeholder="ВАШЕ ИМЯ" required="required" class="register__name"/>
+          </fieldset>
+          <fieldset>
+            <input type="tel" name="tel" value="" placeholder="ВАШ ТЕЛЕФОН" required="required" class="register__tel"/>
+            <input type="email" name="email" value="" placeholder="ВАШ EMAIL" required="required" class="register__email"/>
+          </fieldset>
+          <fieldset>
+            <textarea name="message" cols="30" rows="10" placeholder="СООБЩЕНИЕ" required="required" class="register__message"></textarea>
+          </fieldset>
+          <fieldset>
+            <button type="submit" class="register__submit">Отправить</button>
+          </fieldset>
+        </form>
+      </section>
+    </section>
+    <footer>
+      <p class="copyright">© 2015 Свадебное агентство саши дергоусовой</p>
+      <form action="/subscribe/" method="post" class="subscribe">
+        <fieldset>
+          <label for="footer_subscribe_email">Подписаться на рассылку</label>
+          <input id="footer_subscribe_email" type="email" name="email" placeholder="ВАШ EMAIL" value="" required="required"/>
+          <button type="submit">Подписаться</button>
+        </fieldset>
+      </form><a href="http://territory.com.ua/" target="_blank" class="developed-by">CBT</a>
+    </footer>
+  </body>
+</html>
