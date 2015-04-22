@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <title>Как попасть в команду | Свадебное агентство Саши Дергусовой</title>
     <link rel="stylesheet" href="css/styles.css"/>
+    <script src="js/modernizr/modernizr.js">   </script>
+    <script src="js/jquery/dist/jquery.min.js"></script>
+    <script src="js/jquery.scrollTo/jquery.scrollTo.min.js"></script>
+    <script src="js/jquery.inputmask/dist/jquery.inputmask.bundle.min.js"></script>
+    <script src="js/scripts.js" defer="defer" async="async"></script>
   </head>
   <body>
     <header>
@@ -15,8 +20,8 @@
           <input id="header_subscribe_email" type="email" name="email" placeholder="ВАШ EMAIL" value="" required="required"/>
           <button type="submit">Подписаться</button>
         </fieldset>
-      </form><a href="#" class="register-link">Зарегистрироваться на курс</a>
-      <address class="phones"><a href="tel:+380672901863" class="phones__number">+38 (067) 290 18 63</a><a href="tel:+380442279187" class="phones__number">+38 (044) 227 91 87 </a></address>
+      </form><a href="#register-form" class="register-link">Зарегистрироваться на курс</a>
+      <address class="phones"><a href="tel:+380672901863" class="phones__number">+38 (067) 290 18 63</a><a href="tel:+380442279187" class="phones__number">+38 (044) 227 91 87</a></address>
     </header>
     <section class="page">
       <header class="page__header"><a href="/">
@@ -45,10 +50,10 @@
             <div class="mailus__details">
               <h2 class="mailus__title">Если вы хотите стать членом команды присылайте нам свои резюме на e-mail ответив на несколько вопросов:</h2>
               <ul>
-                <li>Ваш опыт работы на свадьбе?  </li>
-                <li>Почему вы хотите работать в Свадебном агентстве Саши Дергоусовой? </li>
+                <li>Ваш опыт работы на свадьбе?</li>
+                <li>Почему вы хотите работать в Свадебном агентстве Саши Дергоусовой?</li>
                 <li>Что бы самое важное вы хотели рассказать о себе?</li>
-              </ul><a href="#" class="mailus__send">Напишите нам</a>
+              </ul><a href="#register-form" class="mailus__send">Напишите нам</a>
             </div>
           </div>
         </div>
@@ -60,22 +65,22 @@
               <h2 class="mailus__title">Люди, которые вдохновят нас больше всего, могут получить шанс пройти у нас  стажировку. Если вы готовы попытать удачу, присылайте письма с ответами на вопросы</h2>
               <ul>
                 <li>Почему вы хотите пройти стажировку в свадебном агентстве?</li>
-                <li>Почему вы хотите стажироваться именно в Свадебном агентстве Саши Дергоусовой? </li>
+                <li>Почему вы хотите стажироваться именно в Свадебном агентстве Саши Дергоусовой?</li>
                 <li>Что вы умеете делать и чем можете быть полезны в период стажировки?</li>
                 <li>Какой период стажировки считаете возможным?</li>
-              </ul><a href="#" class="mailus__send">Напишите нам</a>
+              </ul><a href="#register-form" class="mailus__send">Напишите нам</a>
             </div>
           </div>
         </div>
       </section>
-      <section class="register">
+      <section id="register-form" class="register">
         <h2 class="section-title section-title_register"><span>Записаться на следующий курс</span></h2>
         <form action="/register/" method="post" class="register__form">
           <fieldset>
             <input type="text" name="name" value="" placeholder="ВАШЕ ИМЯ" required="required" class="register__name"/>
           </fieldset>
           <fieldset>
-            <input type="tel" name="tel" value="" placeholder="ВАШ ТЕЛЕФОН" required="required" class="register__tel"/>
+            <input type="tel" data-inputmask="'mask': '+38 (999) 999-99-99'" name="tel" value="" placeholder="ВАШ ТЕЛЕФОН" required="required" class="register__tel"/>
             <input type="email" name="email" value="" placeholder="ВАШ EMAIL" required="required" class="register__email"/>
           </fieldset>
           <fieldset>
