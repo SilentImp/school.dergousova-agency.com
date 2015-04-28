@@ -11,6 +11,13 @@
   background: url("../svg/search.svg") 0 50% no-repeat;
   background-size: 20px auto;
   display: inline-block;
+  &_bg{
+    background-color: #fff;
+    line-height: 40px;
+    padding: 0 40px 0 75px;
+    background-position: 40px 50%;
+    border-radius: 20px;
+    }
   &_dark{
     color: $brown;
     background-image: url('../svg/search-dark.svg');

@@ -14,6 +14,8 @@ html(lang="ru")
     script(src="js/modernizr/modernizr.js")    
     script(src="js/jquery/dist/jquery.min.js")
     script(src="js/jquery.scrollTo/jquery.scrollTo.min.js")
+    script(src="js/jquery-placeholder/jquery.placeholder.min.js")
+    script(src="js/jquery.inputmask/dist/jquery.inputmask.bundle.min.js")
     
     script(src="js/scripts.js", defer, async)
     
@@ -53,6 +55,7 @@ html(lang="ru")
           a.page__navigation-link.page__navigation-link_contacts(href="#") Контакты
     
       section.window.window_about
+        .window__overlay
         .window__wrapper
           h2.window__title Базовый курс «Профессия свадебного распорядителя»
           p.window__text Этот курс дает глубинное понимание профессии и ясное представление всем его участникам о том, как сделать свадьбу настоящим шедевром.
