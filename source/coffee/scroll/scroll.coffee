@@ -7,12 +7,12 @@ class ScrollForIt
     @scroll_px_step = 1000
 
   element: (element)=>
-    console.log('element', element)
+
     @scrolling = true
     @html.classList.add 'scrolling'
     @startTime = parseInt new Date().getTime().toString().substr(-5), 10
     @startPos = window.pageYOffset
-    @endPos = 1000
+    @endPos = element.getBoundingClientRect().top
     @vector = 1
     if @endPos < @startPos
       @vector = -1
@@ -28,11 +28,11 @@ class ScrollForIt
     @loop()
 
   loop: =>
-    if !@renderScroll
+    if !@renderScroll()
       @scrolling = false
       @html.classList.remove 'scrolling'
       return
-    return requestAnimationFrame @loop
+    return requestAnimationFrame(@loop)
 
   renderScroll: =>
     time = parseInt new Date().getTime().toString().substr(-5), 10

@@ -109,6 +109,7 @@ gulp.task('html', function() {
 gulp.task('js', function() {
   return gulp.src([dirs.source.coffee, dirs.source.js])
     .pipe(gulpif(/[.]coffee$/, coffee({bare: true})))
+    .pipe(order(['classlist.js','request_animation_frame.js']))
     .pipe(concat("scripts.js"))
     .pipe(gulp.dest(dirs.build.js));
 });
