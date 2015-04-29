@@ -1,117 +1,66 @@
-<!DOCTYPE html>
-html(lang="ru")
-  head
-    meta(charset="UTF-8")
+extends ../partials/layout.jade
 
-    meta(name="viewport", content="width=device-width, initial-scale=1")
-    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+block title
+  title Курсы | Свадебное агентство Саши Дергусовой
 
-    title Курсы | Свадебное агентство Саши Дергусовой
+block page
+  header.page__header
 
-    link(rel="stylesheet", href="css/styles.css")
+    a(href="/")
+      h1.logotype Свадебное агентство Саши Дергусовой
 
-    script(src="js/modernizr/modernizr.js")
-    script(src="js/jquery/dist/jquery.min.js")
-    script(src="js/jquery-placeholder/jquery.placeholder.min.js")
-    script(src="js/jquery.inputmask/dist/jquery.inputmask.bundle.min.js")
+    ul.page__navigation
+      span.page__navigation-dropdown
+        a.page__navigation-link(href="team.html") О школе
+        .page__navigation-submenu
+          ul.page__navigation-submenu-wrapper
+            li
+              a.page__navigation-link.page__navigation-link_current(href="company.html") Курсы
+            li
+              a.page__navigation-link(href="#") Календарь обучения
+            li
+              a.page__navigation-link(href="#") Выпускники
+      a.page__navigation-link(href="about.html") Об агентстве
+      a.page__navigation-link(href="#") Новости
+      a.page__navigation-link(href="vacancy.html") Как попасть в команду
+      a.page__navigation-link.page__navigation-link_contacts(href="#") Контакты
 
-    script(src="js/scripts.js", defer, async)
-
-  body
-    header
-      form.subscribe(action="/subscribe/", method="post")
-        fieldset
-          label(for="header_subscribe_email") Подписаться на рассылку
-          input#header_subscribe_email(type="email", name="email", placeholder="ВАШ EMAIL", value="", required="required")
-          button(type="submit") Подписаться
-      a.register-link(href="#register-form") Зарегистрироваться на курс
-      address.phones
-        a.phones__number(href="tel:+380672901863") +38 (067) 290 18 63
-        a.phones__number(href="tel:+380442279187") +38 (044) 227 91 87
-
-    section.page
-
-      header.page__header
-
-        a(href="/")
-          h1.logotype Свадебное агентство Саши Дергусовой
-
-        ul.page__navigation
-          span.page__navigation-dropdown
-            a.page__navigation-link(href="team.html") О школе
-            .page__navigation-submenu
-              ul.page__navigation-submenu-wrapper
-                li
-                  a.page__navigation-link.page__navigation-link_current(href="company.html") Курсы
-                li
-                  a.page__navigation-link(href="#") Календарь обучения
-                li
-                  a.page__navigation-link(href="#") Выпускники
-          a.page__navigation-link(href="about.html") Об агентстве
-          a.page__navigation-link(href="#") Новости
-          a.page__navigation-link(href="vacancy.html") Как попасть в команду
-          a.page__navigation-link.page__navigation-link_contacts(href="#") Контакты
-
-      section.window.window_about
-        .window__overlay
-        .window__wrapper
-          h2.window__title Вы получите информацию из первых уст: от самой Саши, профессионалов команды, партнеров агентства и специальных гостей
-          p.window__text.window__text_empty
+  section.window.window_about
+    .window__overlay
+    .window__wrapper
+      h2.window__title Вы получите информацию из первых уст: от самой Саши, профессионалов команды, партнеров агентства и специальных гостей
+      p.window__text.window__text_empty
 
 
-      ul.course.course_types
+  ul.course.course_types
 
-        li.course__item.course__item_newbie
-          h2.course__title Базовый курс «Профессия свадебного распорядителя»
-          p.course__abstract Этот курс дает глубинное понимание профессии и ясное представление всем его участникам о том, как сделать свадьбу настоящим шедевром.
-          a.read.read_dark(href="#") Детальнее
+    li.course__item.course__item_newbie
+      h2.course__title Базовый курс «Профессия свадебного распорядителя»
+      p.course__abstract Этот курс дает глубинное понимание профессии и ясное представление всем его участникам о том, как сделать свадьбу настоящим шедевром.
+      a.read.read_dark(href="#") Детальнее
 
-        li.course__item.course__item_video
-          h2.course__title Режиссура свадебного дня
-          p.course__abstract Свадьба – это необычный праздник, наполненный особым смыслом благодаря индивидуальности людей: гостей и главных ее участников.
-          a.read.read_dark(href="#") Детальнее
-
-
-        li.course__item.course__item_idea
-          h2.course__title Где черпать идеи для вдохновения: секреты Свадебного агентства Саши Дергоусовой
-          p.course__abstract Если свадьбы у вас вызывают восторг, а работы «Свадебного агентства Саши Дергоусовой» - восхищение, если вы, с нетерпением, ждете каждый видео-ролик и подборку фотографий на страницах агентства, чтобы подробнее рассмотреть все детали, если ваша мечта – делать не просто красивые, но и по-настоящему эмоциональные праздники, вам непременно будет интересен данный курс.
-          a.read.read_dark(href="#") Детальнее
-
-        li.course__item.course__item_service
-          h2.course__title Эффективные инструменты продвижения услуг на свадебном рынке Украины
-          p.course__abstract Если вы хотите научиться эффективно продавать и преподносить свои услуги, чтобы быть успешным и востребованным – этот курс специально для вас.
-          a.read.read_dark(href="#") Детальнее
-
-        li.course__item.course__item_bride
-          h2.course__title Как создать стильную свадьбу: искусство оформления в деталях
-          p.course__abstract В рамках этого курса преподаватели – команда «Свадебного агентства Саши Дергоусовой», организаторы, декораторы и флористы – рассказывают о главных акцентах в оформлении свадьбы, нюансах и моментах, которым важно уделять особое внимание.
-          a.read.read_dark(href="#") Детальнее
-
-        li.course__item.course__item_owner
-          h2.course__title Как создать успешное свадебное агентство
-          p.course__abstract Курс создан специально для тех, кто планирует открыть свое агентство или уже управляет таковым, но хочет выйти на принципиально новый уровень.
-          a.read.read_dark(href="#") Детальнее
+    li.course__item.course__item_video
+      h2.course__title Режиссура свадебного дня
+      p.course__abstract Свадьба – это необычный праздник, наполненный особым смыслом благодаря индивидуальности людей: гостей и главных ее участников.
+      a.read.read_dark(href="#") Детальнее
 
 
+    li.course__item.course__item_idea
+      h2.course__title Где черпать идеи для вдохновения: секреты Свадебного агентства Саши Дергоусовой
+      p.course__abstract Если свадьбы у вас вызывают восторг, а работы «Свадебного агентства Саши Дергоусовой» - восхищение, если вы, с нетерпением, ждете каждый видео-ролик и подборку фотографий на страницах агентства, чтобы подробнее рассмотреть все детали, если ваша мечта – делать не просто красивые, но и по-настоящему эмоциональные праздники, вам непременно будет интересен данный курс.
+      a.read.read_dark(href="#") Детальнее
 
-      section.register#register-form
-        h2.section-title.section-title_register: span Записаться на следующий курс
-        form.register__form(action="/register/", method="post")
-          fieldset
-            input.register__name(type="text", name="name", value="", placeholder="ВАШЕ ИМЯ", required="required")
-          fieldset
-            input.register__tel(type="tel", data-inputmask="'mask': '+38 (999) 999-99-99'", name="tel", value="", placeholder="ВАШ ТЕЛЕФОН", required="required")
-            input.register__email(type="email", name="email", value="", placeholder="ВАШ EMAIL", required="required")
-          fieldset
-            textarea.register__message(name="message", cols="30", rows="10", placeholder="СООБЩЕНИЕ", required="required")
-          fieldset
-            button.register__submit(type="submit") Отправить
+    li.course__item.course__item_service
+      h2.course__title Эффективные инструменты продвижения услуг на свадебном рынке Украины
+      p.course__abstract Если вы хотите научиться эффективно продавать и преподносить свои услуги, чтобы быть успешным и востребованным – этот курс специально для вас.
+      a.read.read_dark(href="#") Детальнее
 
-    footer
-      p.copyright © 2015 Свадебное агентство саши дергоусовой
-      form.subscribe(action="/subscribe/", method="post")
-        fieldset
-          label(for="footer_subscribe_email") Подписаться на рассылку
-          input#footer_subscribe_email(type="email", name="email", placeholder="ВАШ EMAIL", value="", required="required")
-          button(type="submit") Подписаться
-      a.developed-by(href="http://territory.com.ua/", target="_blank") CBT
+    li.course__item.course__item_bride
+      h2.course__title Как создать стильную свадьбу: искусство оформления в деталях
+      p.course__abstract В рамках этого курса преподаватели – команда «Свадебного агентства Саши Дергоусовой», организаторы, декораторы и флористы – рассказывают о главных акцентах в оформлении свадьбы, нюансах и моментах, которым важно уделять особое внимание.
+      a.read.read_dark(href="#") Детальнее
+
+    li.course__item.course__item_owner
+      h2.course__title Как создать успешное свадебное агентство
+      p.course__abstract Курс создан специально для тех, кто планирует открыть свое агентство или уже управляет таковым, но хочет выйти на принципиально новый уровень.
+      a.read.read_dark(href="#") Детальнее

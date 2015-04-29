@@ -1,135 +1,84 @@
-<!DOCTYPE html>
-html(lang="ru")
-  head
-    meta(charset="UTF-8")
-    
-    meta(name="viewport", content="width=device-width, initial-scale=1")
-    meta(http-equiv="X-UA-Compatible", content="IE=edge")
-    
-    title Новости | Свадебное агентство Саши Дергусовой
-    
-    link(rel="stylesheet", href="css/styles.css")
-    
-    
-    script(src="js/modernizr/modernizr.js")    
-    script(src="js/jquery/dist/jquery.min.js")
-    script(src="js/jquery-placeholder/jquery.placeholder.min.js")
-    script(src="js/jquery.inputmask/dist/jquery.inputmask.bundle.min.js")
-    
-    script(src="js/scripts.js", defer, async)
-    
-  body
-    header
-      form.subscribe(action="/subscribe/", method="post")
-        fieldset
-          label(for="header_subscribe_email") Подписаться на рассылку
-          input#header_subscribe_email(type="email", name="email", placeholder="ВАШ EMAIL", value="", required="required")
-          button(type="submit") Подписаться
-      a.register-link(href="#register-form") Зарегистрироваться на курс
-      address.phones
-        a.phones__number(href="tel:+380672901863") +38 (067) 290 18 63
-        a.phones__number(href="tel:+380442279187") +38 (044) 227 91 87 
-    
-    section.page
-    
-      header.page__header
-      
-        a(href="/")
-          h1.logotype Свадебное агентство Саши Дергусовой
-          
-        ul.page__navigation
-          span.page__navigation-dropdown
-            a.page__navigation-link(href="team.html") О школе
-            .page__navigation-submenu
-              ul.page__navigation-submenu-wrapper
-                li
-                  a.page__navigation-link.page__navigation-link_current(href="company.html") Курсы
-                li
-                  a.page__navigation-link(href="#") Календарь обучения
-                li
-                  a.page__navigation-link(href="#") Выпускники
-          a.page__navigation-link(href="about.html") Об агентстве
-          a.page__navigation-link(href="#") Новости
-          a.page__navigation-link(href="vacancy.html") Как попасть в команду
-          a.page__navigation-link.page__navigation-link_contacts(href="#") Контакты
-    
-      section.window.window_about
-        .window__overlay
-        .window__wrapper
-          h2.window__title Свадебная школа – это авторский проект Саши Дергоусовой, основателя ведущего свадебного агентства Украины
-          p.window__text Создан специально для тех, кто любит свадьбы всей душой и хочет научиться их организовывать. Для тех, кто готов работать больше, чем другие, производя на свет настоящие шедевры. Для тех, кто видит в свадьбах больше, чем просто праздник. Для тех, кто ценит команду и хочет профессионально расти, наполняя мир вокруг красотой, эмоциональностью и неповторимым стилем
-          a.read.read_dark.read_bg(href="#") Детальнее
-    
-      section.scroller
-        .scroller__wrapper
-          .scroller__wrapper-inner
-            .scroller__item
-              .scroller__news
-                h2.scroller__title Первый. Мы предлагаем курсы интересные как с информативной, так и с практической точки зрения
-                p.scroller__brief Мы приглашаем настоящих ценителей красоты и творчества агентства, которые знают, что свадьба – это не просто набор стандартных действий
-                time.scroller__time(datetime="2015-04-22") 22.04.2015
-                a.read.read_dark(href="#") Детальнее
-              .scroller__news
-                h2.scroller__title Мы предлагаем курсы интересные как с информативной, так и с практической точки зрения
-                p.scroller__brief Мы приглашаем настоящих ценителей красоты и творчества агентства, которые знают, что свадьба – это не просто набор стандартных действий
-                time.scroller__time(datetime="2015-04-22") 22.04.2015
-                a.read.read_dark(href="#") Детальнее
-            .scroller__item
-              .scroller__news
-                h2.scroller__title Мы предлагаем курсы интересные как с информативной, так и с практической точки зрения
-                p.scroller__brief Мы приглашаем настоящих ценителей красоты и творчества агентства, которые знают, что свадьба – это не просто набор стандартных действий
-                time.scroller__time(datetime="2015-04-22") 22.04.2015
-                a.read.read_dark(href="#") Детальнее
-              .scroller__news
-                h2.scroller__title Мы предлагаем курсы интересные как с информативной, так и с практической точки зрения
-                p.scroller__brief Мы приглашаем настоящих ценителей красоты и творчества агентства, которые знают, что свадьба – это не просто набор стандартных действий
-                time.scroller__time(datetime="2015-04-22") 22.04.2015
-                a.read.read_dark(href="#") Детальнее
-            .scroller__item
-              .scroller__news
-                h2.scroller__title Мы предлагаем курсы интересные как с информативной, так и с практической точки зрения
-                p.scroller__brief Мы приглашаем настоящих ценителей красоты и творчества агентства, которые знают, что свадьба – это не просто набор стандартных действий
-                time.scroller__time(datetime="2015-04-22") 22.04.2015
-                a.read.read_dark(href="#") Детальнее
-              .scroller__news
-                h2.scroller__title Мы предлагаем курсы интересные как с информативной, так и с практической точки зрения
-                p.scroller__brief Мы приглашаем настоящих ценителей красоты и творчества агентства, которые знают, что свадьба – это не просто набор стандартных действий
-                time.scroller__time(datetime="2015-04-22") 22.04.2015
-                a.read.read_dark(href="#") Детальнее
-            .scroller__item
-              .scroller__news
-                h2.scroller__title Последний. Мы предлагаем курсы интересные как с информативной, так и с практической точки зрения
-                p.scroller__brief Мы приглашаем настоящих ценителей красоты и творчества агентства, которые знают, что свадьба – это не просто набор стандартных действий
-                time.scroller__time(datetime="2015-04-22") 22.04.2015
-                a.read.read_dark(href="#") Детальнее
-              .scroller__news
-                h2.scroller__title Мы предлагаем курсы интересные как с информативной, так и с практической точки зрения
-                p.scroller__brief Мы приглашаем настоящих ценителей красоты и творчества агентства, которые знают, что свадьба – это не просто набор стандартных действий
-                time.scroller__time(datetime="2015-04-22") 22.04.2015
-                a.read.read_dark(href="#") Детальнее
-        nav.scroller__navigation
-          a.scroller__prev(href="#")
-          a.scroller__next(href="#")
-          
-      section.register#register-form
-        h2.section-title.section-title_register: span Записаться на следующий курс
-        form.register__form(action="/register/", method="post")
-          fieldset
-            input.register__name(type="text", name="name", value="", placeholder="ВАШЕ ИМЯ", required="required")
-          fieldset
-            input.register__tel(type="tel", data-inputmask="'mask': '+38 (999) 999-99-99'", name="tel", value="", placeholder="ВАШ ТЕЛЕФОН", required="required")
-            input.register__email(type="email", name="email", value="", placeholder="ВАШ EMAIL", required="required")
-          fieldset
-            textarea.register__message(name="message", cols="30", rows="10", placeholder="СООБЩЕНИЕ", required="required")
-          fieldset
-            button.register__submit(type="submit") Отправить
-        
-    footer
-      p.copyright © 2015 Свадебное агентство саши дергоусовой
-      form.subscribe(action="/subscribe/", method="post")
-        fieldset
-          label(for="footer_subscribe_email") Подписаться на рассылку
-          input#footer_subscribe_email(type="email", name="email", placeholder="ВАШ EMAIL", value="", required="required")
-          button(type="submit") Подписаться
-      a.developed-by(href="http://territory.com.ua/", target="_blank") CBT
-    
+extends ../partials/layout.jade
+
+block title
+  title Новости | Свадебное агентство Саши Дергусовой
+
+block page
+
+  header.page__header
+    a(href="/")
+      h1.logotype Свадебное агентство Саши Дергусовой
+
+    ul.page__navigation
+      span.page__navigation-dropdown
+        a.page__navigation-link(href="team.html") О школе
+        .page__navigation-submenu
+          ul.page__navigation-submenu-wrapper
+            li
+              a.page__navigation-link.page__navigation-link_current(href="company.html") Курсы
+            li
+              a.page__navigation-link(href="#") Календарь обучения
+            li
+              a.page__navigation-link(href="#") Выпускники
+      a.page__navigation-link(href="about.html") Об агентстве
+      a.page__navigation-link(href="#") Новости
+      a.page__navigation-link(href="vacancy.html") Как попасть в команду
+      a.page__navigation-link.page__navigation-link_contacts(href="#") Контакты
+
+  section.window.window_about
+    .window__overlay
+    .window__wrapper
+      h2.window__title Свадебная школа – это авторский проект Саши Дергоусовой, основателя ведущего свадебного агентства Украины
+      p.window__text Создан специально для тех, кто любит свадьбы всей душой и хочет научиться их организовывать. Для тех, кто готов работать больше, чем другие, производя на свет настоящие шедевры. Для тех, кто видит в свадьбах больше, чем просто праздник. Для тех, кто ценит команду и хочет профессионально расти, наполняя мир вокруг красотой, эмоциональностью и неповторимым стилем
+      a.read.read_dark.read_bg(href="#") Детальнее
+
+  section.scroller
+    .scroller__wrapper
+      .scroller__wrapper-inner
+        .scroller__item
+          .scroller__news
+            h2.scroller__title Первый. Мы предлагаем курсы интересные как с информативной, так и с практической точки зрения
+            p.scroller__brief Мы приглашаем настоящих ценителей красоты и творчества агентства, которые знают, что свадьба – это не просто набор стандартных действий
+            time.scroller__time(datetime="2015-04-22") 22.04.2015
+            a.read.read_dark(href="#") Детальнее
+          .scroller__news
+            h2.scroller__title Мы предлагаем курсы интересные как с информативной, так и с практической точки зрения
+            p.scroller__brief Мы приглашаем настоящих ценителей красоты и творчества агентства, которые знают, что свадьба – это не просто набор стандартных действий
+            time.scroller__time(datetime="2015-04-22") 22.04.2015
+            a.read.read_dark(href="#") Детальнее
+        .scroller__item
+          .scroller__news
+            h2.scroller__title Мы предлагаем курсы интересные как с информативной, так и с практической точки зрения
+            p.scroller__brief Мы приглашаем настоящих ценителей красоты и творчества агентства, которые знают, что свадьба – это не просто набор стандартных действий
+            time.scroller__time(datetime="2015-04-22") 22.04.2015
+            a.read.read_dark(href="#") Детальнее
+          .scroller__news
+            h2.scroller__title Мы предлагаем курсы интересные как с информативной, так и с практической точки зрения
+            p.scroller__brief Мы приглашаем настоящих ценителей красоты и творчества агентства, которые знают, что свадьба – это не просто набор стандартных действий
+            time.scroller__time(datetime="2015-04-22") 22.04.2015
+            a.read.read_dark(href="#") Детальнее
+        .scroller__item
+          .scroller__news
+            h2.scroller__title Мы предлагаем курсы интересные как с информативной, так и с практической точки зрения
+            p.scroller__brief Мы приглашаем настоящих ценителей красоты и творчества агентства, которые знают, что свадьба – это не просто набор стандартных действий
+            time.scroller__time(datetime="2015-04-22") 22.04.2015
+            a.read.read_dark(href="#") Детальнее
+          .scroller__news
+            h2.scroller__title Мы предлагаем курсы интересные как с информативной, так и с практической точки зрения
+            p.scroller__brief Мы приглашаем настоящих ценителей красоты и творчества агентства, которые знают, что свадьба – это не просто набор стандартных действий
+            time.scroller__time(datetime="2015-04-22") 22.04.2015
+            a.read.read_dark(href="#") Детальнее
+        .scroller__item
+          .scroller__news
+            h2.scroller__title Последний. Мы предлагаем курсы интересные как с информативной, так и с практической точки зрения
+            p.scroller__brief Мы приглашаем настоящих ценителей красоты и творчества агентства, которые знают, что свадьба – это не просто набор стандартных действий
+            time.scroller__time(datetime="2015-04-22") 22.04.2015
+            a.read.read_dark(href="#") Детальнее
+          .scroller__news
+            h2.scroller__title Мы предлагаем курсы интересные как с информативной, так и с практической точки зрения
+            p.scroller__brief Мы приглашаем настоящих ценителей красоты и творчества агентства, которые знают, что свадьба – это не просто набор стандартных действий
+            time.scroller__time(datetime="2015-04-22") 22.04.2015
+            a.read.read_dark(href="#") Детальнее
+    nav.scroller__navigation
+      a.scroller__prev(href="#")
+      a.scroller__next(href="#")
